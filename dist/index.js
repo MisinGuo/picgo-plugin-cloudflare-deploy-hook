@@ -105,7 +105,7 @@ module.exports = (ctx) => {
                         else {
                             ctx.emit('notification', {
                                 title: '❌ 错误',
-                                body: result?.message || '上传后脚本执行失败'
+                                body: (result === null || result === void 0 ? void 0 : result.message) || '上传后脚本执行失败'
                             });
                         }
                     }

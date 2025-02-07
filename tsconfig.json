@@ -6,7 +6,7 @@
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
     "sourceMap": false,
-    "target": "ESNext",
+    "target": "es2017",
     "declaration": true,
     "outDir": "dist",
     // It's shit.
@@ -18,7 +18,9 @@
     //   "@utils/*": ["utils/*"]
     // },
     "lib": [
-      "ESNext",
+      "es2017",
+      "es2015",
+      "es6"
     ]
   },
   "include": [
