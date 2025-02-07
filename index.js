@@ -118,6 +118,7 @@ module.exports = (ctx) => {
                     }
                 }
             },
+            name: '请求配置',
             config: pluginConfig
         });
     };
