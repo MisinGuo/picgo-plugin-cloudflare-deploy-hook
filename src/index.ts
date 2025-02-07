@@ -121,6 +121,7 @@ export = (ctx: PicGo) => {
           }
         }
       },
+      name: '请求配置',
       config: pluginConfig
     })
   }

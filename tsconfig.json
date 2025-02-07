@@ -1,29 +1,28 @@
 {
   "compilerOptions": {
-    "module": "commonjs",
-    "moduleResolution": "node",
-    "resolveJsonModule": true,
-    "esModuleInterop": true,
-    "allowSyntheticDefaultImports": true,
-    "sourceMap": false,
-    "target": "es2017",
-    "declaration": true,
-    "outDir": "dist",
-    // It's shit.
-    // "baseUrl": "src",
-    // "paths": {
-    //   "@core/*": ["core/*"],
-    //   "@lib/*": ["lib/*"],
-    //   "@plugins/*": ["plugins/*"],
-    //   "@utils/*": ["utils/*"]
-    // },
+    "module": "commonjs",                          // 使用 CommonJS 模块
+    "moduleResolution": "node",                    // Node.js 风格的模块解析
+    "resolveJsonModule": true,                     // 支持导入 JSON 文件
+    "esModuleInterop": true,                       // 启用 ES 模块兼容性
+    "allowSyntheticDefaultImports": true,          // 允许导入默认导出的模块
+    "sourceMap": false,                            // 禁用 source map
+    "target": "es2017",                            // 编译为 ES2017
+    "declaration": true,                           // 生成声明文件 (.d.ts)
+    "outDir": "dist",                              // 输出目录
+    "baseUrl": "./src",                            // 设置模块的基本路径
+    "paths": {
+      "@core/*": ["core/*"],                       // 路径别名: @core 指向 src/core
+      "@lib/*": ["lib/*"],                         // 路径别名: @lib 指向 src/lib
+      "@plugins/*": ["plugins/*"],                 // 路径别名: @plugins 指向 src/plugins
+      "@utils/*": ["utils/*"]                      // 路径别名: @utils 指向 src/utils
+    },
     "lib": [
-      "es2017",
-      "es2015",
-      "es6"
+      "es2017",                                    // 使用 ES2017 的库
+      "es2015",                                    // 使用 ES2015 的库
+      "es6"                                        // 使用 ES6 的库
     ]
   },
   "include": [
-    "./src/**/*"
+    "./src/**/*"                                  // 包含所有 src 目录下的文件
   ]
 }
